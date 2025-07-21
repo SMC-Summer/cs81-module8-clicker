@@ -2,7 +2,7 @@
 
 ### What helped you understand DOM interaction best?
 
-What helped me most was seeing the direct, real-time connection between the JavaScript code and the visible web page. Using document.getElementById() to "grab" an element and then immediately changing its .textContent property made the concept very tangible. It felt like I was giving direct commands to the browser: "Find this specific spot, and now, write this new number there." This cause-and-effect relationship was much clearer than just reading about it.
+What helped me most was seeing the direct, real-time connection between the JavaScript code and the visible web page. Using `document.getElementById()` to "grab" an element and then immediately changing its `.textContent` property made the concept very tangible. It felt like I was giving direct commands to the browser: "Find this specific spot, and now, write this new number there." This cause-and-effect relationship was much clearer than just reading about it.
 
 ### How did you choose your milestone messages?
 
