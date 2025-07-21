@@ -54,7 +54,30 @@
         </div>
        
     </div>
+    <script>
+        // --- DOM Element Selection ---
+        // Get the necessary elements from the HTML to interact with them.
+        const clickerButton = document.getElementById('clicker-button');
+        const counterDisplay = document.getElementById('counter-display');
+        const messageDisplay = document.getElementById('message-display');
+        const bodyElement = document.getElementById('body-element');
 
+        // --- Game State Variable ---
+        // This variable will keep track of the number of clicks.
+        let clickCount = 0;
+
+        // --- Event Listener ---
+        // This tells the browser to wait for a 'click' on our button.
+        // When the button is clicked, the function inside will run.
+        clickerButton.addEventListener('click', function() {
+            // 1. Increment the counter
+            clickCount++;
+
+            // 2. Update the counter display on the page
+            counterDisplay.textContent = clickCount;
+        });
+    </script>
+    
 </body>
 </html>
 
