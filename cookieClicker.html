@@ -75,6 +75,25 @@
 
             // 2. Update the counter display on the page
             counterDisplay.textContent = clickCount;
+
+            // 3. Check for milestones and update messages/styles
+            // We use if/else if statements to check the click count and provide different feedback.
+            if (clickCount === 10) {
+                messageDisplay.textContent = "You've left the atmosphere!";
+                bodyElement.classList.remove('bg-gray-900');
+                bodyElement.classList.add('bg-indigo-900'); // Change background color
+            } else if (clickCount === 25) {
+                messageDisplay.textContent = "Wow, a shooting star! 🌠";
+            } else if (clickCount === 50) {
+                messageDisplay.textContent = "You're exploring new galaxies!";
+                clickerButton.textContent = '🚀'; // Change the emoji
+                bodyElement.classList.remove('bg-indigo-900');
+                bodyElement.classList.add('bg-purple-900');
+            } else if (clickCount === 100) {
+                messageDisplay.textContent = "You are a master of the cosmos! ✨";
+                // Add a celebratory visual effect
+                messageDisplay.classList.add('text-yellow-300', 'font-bold');
+            }
         });
     </script>
     
